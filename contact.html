@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storydek</title>
+    <link rel="stylesheet" href="new.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="preload">
+      <div class="center">
+        <div class="ring"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+
+    <div class="main">
+      
+      <div class="container">
+        <div class="nav-img">
+          <img src="storydeklogo1.png" alt="navbar image" />
+        </div>
+        <div class="nav-text">
+          <ul class="nav-text-ul">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">Home</a>
+            </li >
+            <li  class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li >
+            <li  class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li >
+            <li  class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <h1>
+          <img class="hamburgur" src="/assets/WEBSITE BUTTON.png" alt="" />
+        </h1>
+      </div>
+    </div>
+    <div style="height:40px; width: 100%;"></div>
+
+    <!-- <div class="first-back">
+      <div class="left-text">
+        <h2 class="heading">My Portfolio</h2>
+        <p class="subheading" >When words become unclear , I shall focus with photographs , When images become inadequate , I shall be content with silence</p>
+      </div>
+      <div class="gallary">
+        <div class="box row-2" style="background-image: url(https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fHww);">Waterfall</div>
+        <div class="box col-2" style="background-image: url(https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJlfGVufDB8fDB8fHww);">Hills</div>
+        <div class="box" style="background-image: url(https://images.unsplash.com/photo-1497449493050-aad1e7cad165?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D);">Ocean</div>
+        <div class="box row-2" style="background-image: url(https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D);">Rain</div>
+        <div class="box col-2" style="background-image: url(https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJlfGVufDB8fDB8fHww);">Mountains</div>
+        <div class="box" style="background-image: url(https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D);">Trees</div>
+        <div class="box col-2" style="background-image: url(https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D);">Beach</div>
+      </div>
+      
+      
+      
+    </div> -->
+    <div class="soon"><h1>Comming Soon</h1></div>
+
+    <script>
+        const navbar_ul= document.querySelector(".nav-text-ul");
+        const hamburgur=document.querySelector(".hamburgur");
+        hamburgur.addEventListener("click" , function(){
+            navbar_ul.classList.toggle("invisible")
+        });
+      window.addEventListener("load", function () {
+        const navbar = document.querySelector(".container");
+        const preload=document.querySelector(".preload");
+        setTimeout(function() {
+            preload.style.display = "none";
+            navbar.style.top = "20px";
+          }, 2000); // Adjust delay in milliseconds (2 seconds here)
+        });
+      
+    </script>
+  </body>
+</html>
